@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+    int c;
+    for (int a=2 ; a<=1000; a++)
+    {
+        c=0;
+        for(int i=2;i<a;i++)
+        {
+            if(a%i==0)
+                c=c+1;
+        }
+        if(c==0)
+            printf("\n %d",a);
+
+    }
+}
